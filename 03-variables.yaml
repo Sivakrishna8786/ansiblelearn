@@ -2,9 +2,9 @@
   hosts: mongodb
   # this is play level variables, maps
   vars:
-    COURSE: DevOps with AWS
-    TRAINER: SIVA KUMAR
-    DURATION: 1 to 2 Hrs
+    COURSE: DevOpswithAWS
+    TRAINER: SIVAKUMAR
+    DURATION: 1to2 Hrs
   tasks:
   - name: print hello world
     ansible.builtin.debug:
