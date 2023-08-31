@@ -1,9 +1,9 @@
-- name: Variables 
-  hosts:  mongodb
+- name: variables 
+  hosts: mongodb
   # this is play variables,map
   vars:
     COURSE: DevOps with AWS
-    TRAINER:  SIVAKUMAR
+    TRAINER: SIVAKUMAR
     DURATION: 110hours
   tasks:
   - name: print hello world
