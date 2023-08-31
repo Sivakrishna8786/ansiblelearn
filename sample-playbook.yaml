@@ -1,0 +1,12 @@
+- name: Install and Run nginx
+  hosts: mongodb
+  become: yes # this is root access
+  tasks:
+  - name: nginx
+    ansible.builtin.yum:
+      name: install nginx
+      state: installed
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: Started
