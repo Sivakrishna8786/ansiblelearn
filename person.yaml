@@ -1,0 +1,33 @@
+# List of Persons
+- Name: Siva Krishna
+  DOB: 20-06-1990
+ #This is map
+  address:
+   city: Hyd
+   country: India
+   Street: Gandhi Road
+ #this is addresses
+  addresses:
+  - type: Prem
+    City: hyd
+    country: India
+  - type: Current
+    City: ontario
+    Country: Canada
+
+# List of second Persons
+- Name: Siva Krishna
+  DOB: 20-06-1990
+ #This is map
+  address:
+   city: Hyd
+   country: India
+   Street: Gandhi Road
+ #this is addresses
+  addresses:
+  - type: Prem
+    City: hyd
+    country: India
+  - type: Current
+    City: ontario
+    Country: Canada
