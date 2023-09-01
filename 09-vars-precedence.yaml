@@ -6,8 +6,8 @@
   - variables.yaml
   vars_prompt:
   - name: NAME
-     prompt: please enter trainer name
-     private: false
+    prompt: please enter trainer name
+    private: false
   tasks:
   - name: variable at task level
     vars:
