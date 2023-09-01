@@ -1,0 +1,15 @@
+- name: variables at tasl level
+  hosts: local host
+  vars:
+  - money: "100k RS"
+    land: "100 hectars"
+  tasks:
+  - name: inherits values from play
+    ansible.builtin.debug:
+     msg: "money is {{MONEY}}, land is {{LAND}}"
+  - name: inherits values from play and add and override
+    vars:
+    - money: "1000K RS"
+      houses: "3 houses"
+      ansible.builtin.debug:
+        msg: "money is {{MONEY}}, houses is {{HOUSES}}"
