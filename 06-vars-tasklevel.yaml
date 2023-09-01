@@ -1,21 +1,3 @@
-- name: variables at tasl level
-  hosts: localhost
-  # this variables are parent or play level
-  vars:
-  - money: "100000 RS"
-    land: "100 hectars"
-  tasks:
-  - name: inherits values from play
-    ansible.builtin.debug:
-      msg: "MONEY: {{money}}, LAND: {{land}}"
-  - name: inherits values from play and add and override
-    vars:
-    - money: "1000K RS"
-      houses: "3 houses"
-      ansible.builtin.debug:
-        msg: "MONEY: {{MONEY}}, LAND: {{LAND}}, HOUSE: {{House}}"
-
-
 - name: variables at task level
   hosts: localhost
   # these variables of parent or play level
@@ -32,3 +14,5 @@
       houses: "3 houses"
     ansible.builtin.debug:
       msg: "MONEY: {{money}}, LAND: {{land}}, houses: {{houses}}"
+
+
