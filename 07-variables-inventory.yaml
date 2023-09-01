@@ -4,3 +4,12 @@
   - name: print mongodb username
     ansible.buitin.degub:
      msg: "username is: {{MONGO_USERNAME}}"
+
+
+
+- name: variables from inventory
+  hosts: mongodb
+  tasks:
+  - name: print mongodb username
+    ansible.builtin.debug:
+     msg: "username is: {{MONGO_USERNAME}}"
