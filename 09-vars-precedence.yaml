@@ -1,7 +1,7 @@
 - name: testing variable precedence
   hosts: mongodb
   vars: 
-  NAME: SIVAKRISHNA-play level
+   NAME: SIVAKRISHNA-play level
   vars_files:
   - variables.yaml
   vars_prompt:
@@ -11,6 +11,6 @@
   tasks:
   - name: variable at task level
     vars:
-    - name: sivakrishna-task
+     NAME: sivakrishna-task
     ansibel.builtin.debug:
-     msg: "Trainer name is {{SIVAKRISHNA}}"
+       msg: "Trainer name is {{SIVAKRISHNA}}"
