@@ -10,8 +10,8 @@
     ignore_errors: true 
   - name: print the command outpur
     ansible.builtin.debug:
-     msg: "output is {{OUTPUT}}"
+     msg: "output is: {{OUTPUT}}"
   - name: print exist status
     ansible.builtin.debug:
-     msg: "{{output.rc}}"
+     msg: "{{OUTPUT.rc}}"
 
