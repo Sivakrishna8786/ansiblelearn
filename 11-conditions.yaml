@@ -1,0 +1,11 @@
+- name: create user
+  hosts: localhost
+  tasks:
+  - name: create roboshop user exists or not
+    # when you want you run ansible command directly i.e. in the case ansibel madule is not available
+    ansible.builtin.command: id roboshop
+    register: OUTPUT # output is variable name
+  - name: print the command outpur
+    ansible.builtin.degub:
+     msg: "output is {{OUTPUT}}"
+
