@@ -1,5 +1,5 @@
-- name: ansible var data types
-  hoats: localhost
+- name: ansible variable data types
+  hosts: localhost
   vars:
   - AGE: 30
   - NAME: "Sivakrishna" #string
