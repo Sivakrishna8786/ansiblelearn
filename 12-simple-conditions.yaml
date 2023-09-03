@@ -1,7 +1,7 @@
 - name: simple conditions
   hosts: localhost
   vars:
-  NAME: DevOps
+   NAME: DevOps
   tasks:
   - name: run this if name is DevOps
     ansible.builtin.debug:
