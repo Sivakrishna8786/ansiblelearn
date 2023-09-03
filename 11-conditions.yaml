@@ -3,8 +3,11 @@
   tasks:
   - name: create roboshop user exists or not
     # when you want you run ansible command directly i.e. in the case ansibel madule is not available
+    # when the user does not exits, ansible testing this failure and comeout by-default
+    # ignore_errors: true
     ansible.builtin.command: id roboshop
     register: OUTPUT # output is variable name
+    ignore_errors: true
   - name: print the command outpur
     ansible.builtin.debug:
      msg: "output is {{OUTPUT}}"
