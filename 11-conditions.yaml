@@ -15,11 +15,11 @@
   - name: print exist status
     ansible.builtin.debug:
      msg: "{{output.rc}}"
+    when: output.rc != 0
   - name: create user roboshop
     become: yes # we need sudo access for this only 
     ansible.builtin.user:
      name: roboshop
-    when: output.rc != 0
      
 
 
