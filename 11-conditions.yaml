@@ -6,22 +6,17 @@
     # when the user does not exits, ansible testing this failure and comeout by-default
     # ignore_errors: true
     ansible.builtin.command: id roboshop
-    register: outptut # output is variable name
+    register: out # output is variable name
     ignore_errors: true 
 
   - name: print the command output
     ansible.builtin.debug:
-     msg: "output is: {{output}}"
-  - name: print exist status
+     msg: "output is: {{out}}"
+  - name: print exit status
     ansible.builtin.debug:
-     msg: "{{output.rc}}"
-    when: output.rc != 0
+     msg: "{{out.rc}}"
+    when: out.rc != 0
   - name: create user roboshop
     become: yes # we need sudo access for this only 
     ansible.builtin.user:
      name: roboshop
-     
-
-
-
-
