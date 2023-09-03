@@ -1,5 +1,5 @@
 - name: install multiple packages
-  hosts: mongodb
+  hosts: mongod
   become: yes 
   tasks:
   - name: install package
