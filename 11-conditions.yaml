@@ -6,7 +6,7 @@
     # when the user does not exits, ansible testing this failure and comeout by-default
     # ignore_errors: true
     ansible.builtin.command: id roboshop
-    register: outptu # output is variable name
+    register: outptut # output is variable name
     ignore_errors: true 
   - name: print the command outpur
     ansible.builtin.debug:
