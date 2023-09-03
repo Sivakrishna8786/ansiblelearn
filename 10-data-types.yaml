@@ -1,4 +1,4 @@
-- name: ansible variable data types
+- name: ansible var data types
   hoats: localhost
   vars:
   - AGE: 30
