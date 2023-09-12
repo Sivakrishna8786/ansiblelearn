@@ -1,5 +1,5 @@
-- name: mondosb to install
-  hosts:  mongodb
+- name: Install Mongodb component
+  hosts: mongodb
   become: yes
   tasks: 
   - name: copy mongo repo to yum.repos.d
