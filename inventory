@@ -1,8 +1,17 @@
 [mongodb]
 
-roboshop-us-dev-db-mongodb-01.devopslearning.online
+mongodb.devopslearning.online
 
-[mongodb:vars]
-MONGO_USERNAME=mongodbadmin
-MONGO_DB=catalogues
-NAME= sivakrishna
+[cart]
+
+cart.devopslearning.online
+
+[catalogue]
+
+catalogue.devopslearning.online
+
+[web]
+
+web.devopslearning.online
+
+
